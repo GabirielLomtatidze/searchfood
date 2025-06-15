@@ -1,1 +1,16 @@
 @use "./pages/welcome";
+@use "./components/header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    *::selection{
+        background-color: lightcoral;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+}

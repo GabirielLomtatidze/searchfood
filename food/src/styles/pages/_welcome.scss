@@ -1,10 +1,112 @@
 .welcome_body {
-    background-color: #0D1B2A
+    background-color: #0D1B2A;
+    display: flex;
+    height: 100vh;
 
-    ;
+    .welcome_left_side {
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
 
-    .rame {
-        color: red;
+
+        .welcome_title {
+            color: #EED5C3;
+            margin-top: 180px;
+        }
+
+        .line {
+            width: 0;
+            height: 2px;
+            background-color: #EED5C3;
+            animation: fillLine 1s ease-out forwards;
+            margin-top: 50px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        @keyframes fillLine {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 87%;
+            }
+        }
+
+
+        .welcome_text {
+            color: #EED5C3;
+            margin-top: 50px;
+            font-size: 1.3em;
+            text-align: left;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+
+        .hand_shake {
+            display: inline-block;
+            animation: handShake 1s ease-in-out infinite;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes handShake {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(100deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
     }
+
+
+    .welcome_right_side {
+        width: 50%;
+        height: 100%;
+
+        .auth_border {
+            width: 450px;
+            height: 450px;
+            border: solid 2px white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .auth_text {
+                font-size: 1.2em;
+                color: #EED5C3;
+                margin-bottom: 25px;
+                text-align: center;
+                margin-top: 90px;
+            }
+
+            .sign_button {
+                width: 200px;
+                height: 50px;
+                color: #EED5C3;
+                margin-top: 40px;
+                font-size: 1.2em;
+                background-color: #0D1B2A;
+                border: solid 2px white;
+                border-radius: 8px;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+    }
+
 
 }
