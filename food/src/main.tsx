@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import { ClerkProvider } from '@clerk/clerk-react'
+import "./styles/index.scss"
 
 // https://www.themealdb.com/api/json/v1/1/search.php?s=
 
