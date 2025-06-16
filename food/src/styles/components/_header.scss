@@ -1,4 +1,4 @@
-header{
+header {
     height: 80px;
     width: 100%;
     background-color: #223042;
@@ -7,23 +7,76 @@ header{
     top: 0;
 
 
-    nav{
+    .navbar_icon {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    nav {
         height: 100%;
 
-        .header_ul{
+        .header_ul {
             display: flex;
             list-style: none;
             margin-left: 30px;
 
-            .header_li{
+            .header_li {
                 color: #EED5C3;
                 margin: 30px;
                 font-size: 1.3em;
 
-                .header_li:hover{
+                .header_li:hover {
                     cursor: pointer;
                 }
+
             }
+        }
+    }
+}
+
+
+@media (max-width: 732px) {
+
+    header {
+
+        .navbar_icon {
+            display: block;
+            color: #EED5C3;
+            width: 50px;
+            height: 30px;
+            position: absolute;
+            top: 15px;
+            right: 0;
+
+        }
+
+        .navbar {
+            display: block;
+            width: 100%;
+            height: 20vh;
+            position: absolute;
+            top: 80px;
+            background-color: #223042;
+            animation: anime 0.3s ease-in-out;
+
+            
+
+            @keyframes anime {
+                0%{
+                    opacity: 0%;
+                }
+
+                100%{
+                    opacity: 100%;
+                }
+            }
+        }
+
+        nav {
+            display: none;
         }
     }
 }

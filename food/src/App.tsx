@@ -1,6 +1,6 @@
-import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
-import Welcome from './pages/Welcome';
-import Header from './components/Header';
+import { useUser } from '@clerk/clerk-react';
+
+// yicodo9176@nab4.com
 
 import IsLogIng from './userPosition/IsLogIn';
 import NotLogIn from './userPosition/NotLogIn';
