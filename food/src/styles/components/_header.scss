@@ -17,6 +17,7 @@ header {
 
     nav {
         height: 100%;
+        display: flex;
 
         .header_ul {
             display: flex;
@@ -33,12 +34,34 @@ header {
                 }
 
             }
+
+        }
+
+        .signOut {
+            background-color: #223042;
+            margin: 15px;
+            width: 100px;
+            height: 40px;
+            border-radius: 50px;
+            padding: 5px;
+            color: #EED5C3;
+            font-size: 1.1em;
+            border: solid 1px red;
+            position: absolute;
+            right: 100px;
+            transition: 0.3s;
+        }
+
+        .signOut:hover{
+            cursor: pointer;
+            border: solid 1px #EED5C3;
+            color: red;
         }
     }
 }
 
 
-@media (max-width: 732px) {
+@media (max-width: 920px) {
 
     header {
 
@@ -61,18 +84,43 @@ header {
             top: 80px;
             background-color: #223042;
             animation: anime 0.3s ease-in-out;
-
-            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
             @keyframes anime {
-                0%{
+                0% {
                     opacity: 0%;
                 }
 
-                100%{
+                100% {
                     opacity: 100%;
                 }
             }
+
+            .header_ul {
+                margin-top: 10px;
+
+                .header_li {
+                    margin-top: 20px;
+                    color: #EED5C3;
+                    font-size: 1.2em;
+                }
+            }
+
+            .signOut {
+                background-color: #223042;
+                margin: 25px 15px;
+                width: 100px;
+                height: 40px;
+                border-radius: 50px;
+                padding: 5px;
+                color: #EED5C3;
+                font-size: 1.1em;
+                border: solid 1px red;
+            }
+
+
         }
 
         nav {
