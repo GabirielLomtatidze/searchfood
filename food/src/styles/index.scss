@@ -1,5 +1,7 @@
 @use "./pages/welcome";
+@use "./pages/main";
 @use "./components/header";
+@use "./components/card";
 
 * {
     margin: 0;

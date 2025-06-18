@@ -49,12 +49,13 @@ export default function () {
                             user ?
                                 <>
                                     <a href="/Profile"><li className="header_li">Profile</li></a>
+                                    <button onClick={() => signOut()} className='signOut'>Sign Out</button>
+
                                 </>
                                 : " "
                         }
 
                     </ul>
-                    <button onClick={() => signOut()} className='signOut'>Sign Out</button>
                 </nav>
             </header>
         </>

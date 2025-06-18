@@ -1,4 +1,4 @@
-
+import Card from "../components/Card"
 
 
 
@@ -8,7 +8,9 @@ export default function Main() {
 
     return (
         <>
-            rame
+            <div className="main">
+                <Card />
+            </div>
         </>
     )
 }
