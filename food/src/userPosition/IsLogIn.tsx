@@ -1,10 +1,13 @@
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Main from "../pages/Main";
 import Profile from '../clerkSign/Porifile';
 import Details from '../pages/Details';
 
 export default function IsLogIng() {
+
+   
 
     return (
         <>
