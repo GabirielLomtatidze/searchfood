@@ -28,7 +28,7 @@ export default function () {
                         <a href="/"><li className="header_li">Home</li></a>
                         <a href="#"><li className="header_li">Recipes</li></a>
                         <a href="#"><li className="header_li">Add Recipe</li></a>
-                        <a href="#"><li className="header_li">Saved Recipes</li></a>
+                        <a href="/wishlist"><li className="header_li">Saved Recipes</li></a>
                         {
                             user ?
                                 <>
@@ -44,7 +44,7 @@ export default function () {
                         <a href="/"><li className="header_li">Home</li></a>
                         <a href="#"><li className="header_li">Recipes</li></a>
                         <a href="#"><li className="header_li">Add Recipe</li></a>
-                        <a href="#"><li className="header_li">Saved Recipes</li></a>
+                        <a href="/wishlist"><li className="header_li">Saved Recipes</li></a>
                         {
                             user ?
                                 <>

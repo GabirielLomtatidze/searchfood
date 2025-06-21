@@ -30,20 +30,19 @@ export default function Card() {
     }
 
 
-    const [saveWish, setSaveWish] = useState<string>("")
+    const [saveWish, setSaveWish] = useState<string[]>([])
 
-    const addInWishlist = (index: number) => {
+    const addInWishlist = (meal: string) => {
 
-        const currentWishList: string[] = JSON.parse(localStorage.getItem("wishList") || "[]");
+        if (saveWish.includes(meal)) {
+            alert("already added")
+        } else {
+
+            setSaveWish((prevWish) => [...prevWish, meal]);
+        }
 
 
-        const newWishList = [...currentWishList, `Product ${index}`];
-
-
-        localStorage.setItem("wishList", JSON.stringify(newWishList));
-
-
-        setSaveWish(newWishList.join(", "));
+        console.log(saveWish);
         
     }
 
@@ -58,9 +57,10 @@ export default function Card() {
                     <img src={prod.strMealThumb} alt={prod.strMeal} className="card_img" onClick={() => details(prod.idMeal)} />
                     <p><strong>Category:</strong> {prod.strCategory}</p>
                     <p><strong>Area:</strong> {prod.strArea}</p>
-                    <button className="card_button" onClick={() => addInWishlist(index)}>Add to Wish List</button>
+                    <button className="card_button" onClick={() => addInWishlist(prod.idMeal)}>Add to Wish List</button>
                 </div>
             ))}
+
         </>
     )
 
